@@ -50,7 +50,8 @@ const Registration = () => {
     
     return (
         <KeyboardAvoidingView style={styles.container}
-            behavior='padding'>
+            behavior='height'>
+                 <Text style={styles.header} >Register</Text>
             <View style={styles.inputContainer}>
                 <TextInput
                     placeholder='Email'
@@ -89,48 +90,55 @@ const styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        justifyContent: "center",
+        justifyContent: 'center',
         alignItems: 'center',
-        
-    },
-    inputContainer: {
-        width: '50%',
-        marginTop:15,
-        margin:40,
-    },
-    input: {
-        backgroundColor: 'white',
+        backgroundColor: '#fff',
+      },
+      inputContainer: {
+        width: '80%',
+      },
+      input: {
+        backgroundColor: '#ecf0f1',
         paddingHorizontal: 15,
         paddingVertical: 10,
         borderRadius: 10,
-        marginTop: 5,
-    },
-    buttonContainer: {
+        marginTop: 10,
+        height:60
+      },
+      buttonContainer: {
         width: '80%',
-        justifyContent: 'center',
+        marginTop: 20,
+      },
+      button: {
+        backgroundColor: '#3498db',
+        paddingHorizontal: 20,
+        paddingVertical: 12,
+        borderRadius: 12,
         alignItems: 'center',
-    },
-    button: {
-        backgroundColor: '#0783f9',
-        
-        paddingHorizontal: 15,
-        borderRadius: 10,
-    },
-    buttonOutline: {
-        backgroundColor: 'white',
-        margin: 5,
-        borderColor: '#078f9',
+      },
+      buttonOutline: {
+        backgroundColor: '#fff',
+        marginTop: 10,
+        borderRadius: 12,
+        alignItems: 'center',
         borderWidth: 2,
-    },
-    buttonText: {
-        color: 'white',
+        borderColor: '#3498db',
+      },
+      buttonText: {
+        color: '#fff',
         fontWeight: '700',
         fontSize: 16,
-    },
-    buttonOutlineText: {
+      },
+      buttonOutlineText: {
+        color: '#3498db',
         fontWeight: '700',
         fontSize: 16,
-       
-    },
+      },
+      header: {
+        fontSize: 34,
+        fontWeight: 'bold',
+        marginBottom: 20,
+        color: '#333', 
+      },
 
 })
